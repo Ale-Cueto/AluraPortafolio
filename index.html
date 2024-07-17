@@ -204,35 +204,36 @@
                     </div>
                 </article>
             </section>
+
             <!---Contacto--->
             <section class="contact__main" id="contact">
-                <div class="contact__main___form">
+                <form class="contact__main___form formulario" action="https://formspree.io/f/mknenbrr" method="POST">
                     <h2 class="title">Contacto</h2>
                     <p class="title">
                         ¿Quieres contactarme?<br> Llena el siguiente formulario y me pondré en contacto contigo lo antes posible.
                     </p>
                     <div class="contact__form">
                         <span class="paragraph contact__form___label--disable">Nombre</span>
-                        <input type="text" id="nombre__input" class="contact__form___input" required>
+                        <input type="text" id="nombre__input" class="contact__form___input" maxlength="50" required>
                     </div>
     
                     <div class="contact__form">
                         <label for="email" class="paragraph contact__form___label--disable">E-mail</label>
-                        <input type="mail" id="correo__input" class="contact__form___input" required>
+                        <input type="email" id="correo__input" class="contact__form___input" required>
                     </div>
     
                     <div class="contact__form">
                         <label for="asunto" class="paragraph contact__form___label--disable">Asunto</label>
-                        <input type="text" id="asunto__input" class="contact__form___input" required>
+                        <input type="text" id="asunto__input" class="contact__form___input" maxlength="50" required>
                     </div>
     
                     <div class="contact__form contact__form___msg">
                         <label for="mensaje" class="paragraph contact__form___label--disable">Mensaje</label>
-                        <input type="text" id="msg__input" class="contact__form___input" required>
+                        <input type="text" id="msg__input" class="contact__form___input" maxlength="300" required>
                     </div>
     
                     <input class="btn btn-primary" type="submit" value="Enviar Mensaje" id="btnForm__Enviar">
-                </div>
+                </form>
                 <div class="contact__main___image">
                     <img src="./assets/img/contact.png" alt="imagen contactanos">
                 </div>
